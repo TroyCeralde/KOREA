@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="D:\\LOGO BBQ.jpg"type="image/x-icon">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("D:\\br.jpg"); background-size: 100%;   background-attachment: fixed;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact us</h2>
+    <p>THE BEST OPTION FOR YOU:</p>
+    <p align="center"><img src="D:\\LOGO BBQ.jpg" width="120" height="120" alt="logo" class="avatar"></p>
+    
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="D:\\DAGUPAN CITY.jpg" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="country">Country</label>
+        <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="Philippines">Philippines</option>
+            <option value="MEXICO">MEXICO</option>
+            <option value="SAUDI ARABIA">SAUDI ARABIA</option>
+            <option value="SPAIN">SPAIN</option>
+            <option value="LEBANON">LEBANON</option>
+            <option value="LAS VEGAS">LAS VEGAS</option>
+            <option value="SOUTH KOREA">SOUTH KOREA</option>
+            <option value="JAPAN">JAPAN</option>
+            <option value="PARIS">PARIS</option>
+            <option value="GERMANY">GERMANY</option>
+            <option value="RUSSIA">RUSSIA</option>
+            <option value="TURKEY">TURKEY</option>
+            <option value="CAMBODIA">CAMBODIA</option>
+            <option value="CHINA">CHINA</option>
+            <option value="SAN FRANSCISCO">SAN FRANSCISCO</option>
+            <option value="SINGAPORE">SINGAPORE</option>
+            <option value="INDIA">INDIA</option>
+            <option value="SWITZERLAND">SWITZERLAND</option>
+
+
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

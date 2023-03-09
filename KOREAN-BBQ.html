@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>KOREAN BBQ</title>
+<link rel="icon" href="D:\\LOGO BBQ.jpg"type="image/x-icon">
+</head>
+    <style>
+      
+ 							body {
+								background-image: url("D:\\br.jpg"); background-size: 100%;   background-attachment: fixed;
+								}
+
+      .login-form {
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 100px;
+        
+      }
+
+      .login-form h1 {
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+      }
+
+      .login-form input[type="text"],
+      .login-form input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+      }
+
+      .login-form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 100%;
+      }
+
+      .login-form input[type="submit"]:hover {
+        background-color: #45a049;
+      }
+
+      .login-form .error {
+        color: red;
+        margin-bottom: 10px;
+      }
+      
+    button{
+        background-color: pink;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+
+    </style>
+    
+    
+    
+  </head>
+  <body>
+    <div class="login-form">
+      <h1>ACCOUNT</h1>
+      <form id="login-form" action="login.php" method="post">
+        
+        <p align="center"><img src="D:\\LOGO BBQ.jpg" width="120" height="120" alt="logo" class="avatar"></p>
+
+       <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <a href="index.html" class="login-button">Log in</a>
+      </form>
+    </div>
+  </body>
+</html>
